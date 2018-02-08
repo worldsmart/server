@@ -1,0 +1,6 @@
+{
+  "users_db":{
+    "link":"mongodb://ubuntu_user:roma12@ds125368.mlab.com:25368/users",
+    "name":"Users db"
+  }
+}
