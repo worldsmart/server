@@ -27,3 +27,14 @@ module.exports.saveNew = (data,callback)=>{
     });
   });
 };
+
+module.exports.getByEmail = (email,callback)=>{
+  var query = {"email":email};
+  User.findOne(query,callback);
+};
+
+module.exports.comparePassword = (candidatePassword, hash, callback)=>{
+  bcrypt.compare(candidatePassword, hash, (err, isMatch) => {
+    callback(null, isMatch);
+  });
+};
