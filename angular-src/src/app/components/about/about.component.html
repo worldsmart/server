@@ -1,0 +1,21 @@
+<form class="jumbotron custom003" name="myForm" (submit)="newPost()">
+<legend class="custom002">New post</legend>
+  <div class="form-group">
+    <label class="col-form-label" for="inputDefault">The header of post</label>
+    <input type="text" class="form-control" id="inputDefault" [(ngModel)]="header" name="header">
+  </div>
+  <hr class="my-4">
+  <div class="form-group">
+    <label class="col-form-label" for="inputDefault">Topic of the post</label>
+    <input type="text" class="form-control" placeholder="Default input" id="inputDefault" [(ngModel)]="topic" name="topic">
+  </div>
+  <hr class="my-4">
+    <input type="file" class="form-control-file" (change)="newImg($event)" >
+    <div id="fileHelp" class="form-text text-muted">Select the file to preview your post!</div>
+ <hr class="my-4">
+  <div class="form-group">
+    <label class="col-form-label" for="inputDefault">Text of the post</label>
+    <textarea class="form-control" id="exampleTextarea" rows="4" [(ngModel)]="poststext" name="poststext"></textarea>
+  </div>
+  <button id="sB" type="submit" class="btn btn-primary">Submit</button>
+</form>

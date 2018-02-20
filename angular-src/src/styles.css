@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+#load_img{
+  background-image: url(load.gif);
+  background-size: cover;
+  width: 26vh;
+  height: 26vh;
+  margin: 0 auto;
+}
+.custom01{
+  width: 20vh;
+  height:6vh;
+  margin:0 auto;
+}

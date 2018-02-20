@@ -25,6 +25,12 @@ app.use(express.static(path.join(__dirname, 'err404')));
 const user_link = require('./routes/user');
 app.use('/user',user_link);
 
+const news_link = require('./routes/news');
+app.use('/news',news_link);
+
+const posts_link = require('./routes/posts');
+app.use('/post',posts_link);
+
 app.get('/',(req,res)=>{
     res.sendFile(path.join(__dirname,'err404','404.html'));
 });
